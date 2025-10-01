@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Parcela Lunar Premium",
+        "description": "Lote VIP en la Luna con vista espectacular a la Tierra.",
+        "price": "₡500,000",
+        "image": "img/moon-plot.png",
+        "type": "propiedad"
+    },
+    {
+        "id": 2, 
+        "name": "Mensaje Interestelar",
+        "description": "Envía tu mensaje al vacío cósmico en una botella dimensional.",
+        "price": "₡150,000",
+        "image": "img/message-bottle.png", 
+        "type": "experiencia"
+    },
+    {
+        "id": 3,
+        "name": "Nube Molecular de Orión",
+        "description": "Adquiere una sección exclusiva de la famosa nebulosa de Orión.",
+        "price": "₡900,000",
+        "image": "img/orion-nebula.png",
+        "type": "propiedad"
+    },
+    {
+        "id": 4,
+        "name": "Alquiler de Agujero Negro", 
+        "description": "Alquila simbólicamente un agujero negro por 24 horas.",
+        "price": "₡450,000",
+        "image": "img/black-hole.png",
+        "type": "experiencia"
+    },
+    {
+        "id": 5,
+        "name": "Constelación Personal",
+        "description": "Crea tu propia constelación en nuestro mapa estelar virtual.",
+        "price": "₡600,000", 
+        "image": "img/constellation.png",
+        "type": "propiedad"
+    },
+    {
+        "id": 6,
+        "name": "Viaje Turístico al Planeta Miller",
+        "description": "Experiencia virtual única al planeta oceánico de Interstellar.",
+        "price": "₡650,000",
+        "image": "img/miller-planet-tour.png",
+        "type": "experiencia"
+    }
+]
