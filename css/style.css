@@ -295,17 +295,17 @@ body {
     .main-layout {
         grid-template-columns: 1fr;
     }
-
+    
     .sidebar {
         display: none;
     }
-
+    
     .section-header {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
     }
-
+    
     .top-header {
         flex-direction: column;
         gap: 1rem;

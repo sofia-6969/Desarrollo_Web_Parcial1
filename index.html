@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>U.R.E.S.A. - Acceso Ciudadano Galáctico</title>
+    <title>U.R.E.S.A. - Tienda Cósmica</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="login-container">
-        <div class="cosmic-header">
-            <div class="login-logo-container">
-                <img src="img/favicon.png" alt="U.R.E.S.A. Logo" class="login-logo">
-                <div class="login-logo-text">
-                    <h1>U.R.E.S.A.</h1>
-                    <p>Universal Real Estate & Experiences S.A.</p>
+    <!-- Header cargado dinámicamente -->
+    <div id="header-container"></div>
+
+    <!-- Layout Principal -->
+    <div class="main-layout">
+        <!-- Sidebar cargado dinámicamente -->
+        <div id="sidebar-container"></div>
+
+        <!-- Contenido Principal -->
+        <main class="content">
+            <section class="welcome-section">
+                <h2>Descubre el Cosmos</h2>
+                <p>Bienvenido a tu portal de propiedades y experiencias intergalácticas</p>
+            </section>
+
+            <section class="products-section">
+                <div class="section-header">
+                    <h3>🛒 Productos Cósmicos</h3>
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="propiedad">Propiedades</button>
+                        <button class="filter-btn" data-filter="experiencia">Experiencias</button>
+                    </div>
                 </div>
-            </div>
-            <p class="subtitle">Acceso Exclusivo para Ciudadanos Galácticos</p>
-        </div>
 
-        <form id="loginForm" class="login-form">
-            <div class="input-group">
-                <label for="email">Correo Electrónico Cósmico:</label>
-                <input type="email" id="email" name="email" required placeholder="ciudadano@uresa.com">
-            </div>
-
-            <div class="input-group">
-                <label for="password">Contraseña Dimensional:</label>
-                <input type="password" id="password" name="password" required placeholder="••••••••">
-            </div>
-
-            <button type="submit" class="cosmic-button">Acceder al Portal</button>
-        </form>
-
-        <div id="errorMessage" class="error-message" style="display: none;">
-            ⚠️ Credenciales incorrectas. Verifique su identidad galáctica.
-        </div>
-
-        <div class="login-footer">
-            <p><small>¿Problemas de acceso dimensional? Contacte al soporte intergaláctico.</small></p>
-        </div>
+                <!-- SOLO ESTA SECCIÓN -->
+                <div id="products-template-container" class="products-grid"></div>
+            </section>
+        </main>
     </div>
 
-    <script src="js/login.js"></script>
+    <!-- Footer cargado dinámicamente -->
+    <div id="footer-container"></div>
+
+    <!-- Template para productos -->
+    <template id="product-template">
+        <article class="product-card" data-category="">
+            <div class="product-image">
+                <img src="" alt="" class="product-img">
+            </div>
+            <div class="product-content">
+                <h4 class="product-title"></h4>
+                <p class="product-description"></p>
+                <div class="product-meta">
+                    <span class="product-price"></span>
+                    <span class="product-category"></span>
+                </div>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </div>
+        </article>
+    </template>
+
+    <script src="js/product-card.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
