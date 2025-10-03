@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/login.css">
 </head>
-
 <body>
     <div class="login-container">
         <div class="cosmic-header">
@@ -21,25 +19,27 @@
             </div>
             <p class="subtitle">Acceso Exclusivo para Ciudadanos Galácticos</p>
         </div>
-
+        
         <form id="loginForm" class="login-form">
             <div class="input-group">
                 <label for="email">Correo Electrónico Cósmico:</label>
-                <input type="email" id="email" name="email" required placeholder="ciudadano@uresa.com">
+                <input type="email" id="email" name="email" required 
+                       placeholder="ciudadano@uresa.com">
             </div>
-
+            
             <div class="input-group">
                 <label for="password">Contraseña Dimensional:</label>
-                <input type="password" id="password" name="password" required placeholder="••••••••">
+                <input type="password" id="password" name="password" required 
+                       placeholder="••••••••">
             </div>
-
+            
             <button type="submit" class="cosmic-button">Acceder al Portal</button>
         </form>
-
+        
         <div id="errorMessage" class="error-message" style="display: none;">
             ⚠️ Credenciales incorrectas. Verifique su identidad galáctica.
         </div>
-
+        
         <div class="login-footer">
             <p><small>¿Problemas de acceso dimensional? Contacte al soporte intergaláctico.</small></p>
         </div>
@@ -47,5 +47,4 @@
 
     <script src="js/login.js"></script>
 </body>
-
 </html>
