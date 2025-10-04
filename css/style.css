@@ -23,19 +23,16 @@ body {
     flex-direction: column;
 }
 
-/* Header */
+/* Header CORREGIDO */
 .top-header {
     background: linear-gradient(135deg, var(--space-blue), var(--cosmic-purple));
     padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Esto distribuye: izquierda, centro, derecha */
     align-items: center;
     width: 100%;
 }
@@ -44,6 +41,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex: 1; /* Ocupa el espacio izquierdo */
 }
 
 .site-logo {
@@ -67,10 +65,21 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* Mensaje de bienvenida en el CENTRO */
+.welcome-message {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Botón de cerrar sesión a la DERECHA */
 .header-actions {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex: 1;
+    justify-content: flex-end; /* Alinea a la derecha */
 }
 
 .logout-btn {
@@ -310,5 +319,9 @@ body {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+    }
+    
+    .header-actions {
+        margin-left: 0;
     }
 }
