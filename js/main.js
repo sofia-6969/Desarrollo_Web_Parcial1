@@ -134,7 +134,7 @@ function setupNavigation() {
     });
 }
 
-// Nueva función para activar filtros
+// función para activar filtros
 function activateFilter(filterType) {
     if (!window.location.pathname.includes('index.html') && window.location.pathname !== '/') {
         window.location.href = 'index.html';
@@ -171,6 +171,7 @@ function applyFilter(filterType) {
     }
 }
 
+//boton cerrar sesión
 function setupLogout() {
     document.addEventListener('click', (e) => {
         if (e.target.id === 'logoutBtn' && confirm('¿Salir del portal galáctico?')) {
@@ -179,6 +180,7 @@ function setupLogout() {
     });
 }
 
+//ubicarme
 function setActiveNavItem() {
     setTimeout(() => {
         const currentPage = window.location.pathname;
