@@ -1,7 +1,7 @@
 # Desarrollo_Web_Parcial1
 # U.R.E.S.A. - Universal Real Estate & Experiences
 
-**Desarrollado por:** Danna Velandia y Shary Jimenez  
+**Desarrollado por:** Danna Velandia 192478 y Shary Jimenez  192467
 **Proyecto:** Primer Parcial - Aplicación Web Modularizada
 
 ## Descripción
